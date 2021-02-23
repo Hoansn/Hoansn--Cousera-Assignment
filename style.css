@@ -5,16 +5,18 @@
 
 h1 {
   text-align: center;
+  font-size: 50px;
 }
 
 div {
   position: relative;
   background-color: #777777;
   float: left;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 p {
+  font-size: 20px;
   font-weight: bold;
   position: absolute;
   top: 0px;
@@ -33,29 +35,32 @@ section {
 }
 
 .chicken {
-  background-color: chartreuse;
+  color: black;
+  background-color: green;
 }
 
 .beef {
-  background-color: blanchedalmond;
+  color: white;
+  background-color: rgb(126, 77, 5);
 }
 
 .sushi {
+  color: black;
   background-color: cornflowerblue;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
   .divchicken {
-    width: 30%;
-    margin: 1.666666%;
+    width: 90%;
+    margin: 5%;
   }
   .divbeef {
-    width: 30%;
-    margin: 1.666666%;
+    width: 90%;
+    margin: 5%;
   }
   .divsushi {
-    width: 30%;
-    margin: 1.666666%;
+    width: 90%;
+    margin: 5%;
   }
 }
 
@@ -74,17 +79,17 @@ section {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 992px) {
   .divchicken {
-    width: 90%;
-    margin: 5%;
+    width: 30%;
+    margin: 1.666666%;
   }
   .divbeef {
-    width: 90%;
-    margin: 5%;
+    width: 30%;
+    margin: 1.666666%;
   }
   .divsushi {
-    width: 90%;
-    margin: 5%;
+    width: 30%;
+    margin: 1.666666%;
   }
 }
